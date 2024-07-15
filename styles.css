@@ -2,7 +2,7 @@
 body {
     font-family: serif;
     font-weight: bold;
-    background-color:#FCDEC0;
+    background-color: #c3cdce27;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,32 +12,40 @@ body {
     height: 100vh;
 }
 
+.wholeContainer {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background-color:#4ff198b2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 .mini-container {
-    display: flex;
+    display:flex;
     justify-content: space-between;
-    width: 45%;
+    justify-items: stretch;
+    max-width: 700px;
     margin-bottom: 20px;
-    
-    
 }
 
 .current-date, .current-time {
     font-size: 1.2em;
     padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #f0954a36;
+    border: 1px solid #f3bdbd;
     border-radius: 4px;
     text-align: center;
 }
 
 .container {
     
-    width: 80%;
+    max-width: 750px;
     max-width: 600px;
-    background-color: #fff;
+    background-color: #ee6fe888;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #addf5cc0;
     border-radius: 4px;
     box-shadow: 10px 10px 10px 10px  rgba(0,0,0,0.1);
 }
@@ -50,7 +58,7 @@ body {
 }
 
 .calendar-navigation button {
-    background-color: #007bff;
+    background-color: #ff48009f;
     color: #fff;
     border: none;
     padding: 10px;
@@ -59,7 +67,7 @@ body {
 }
 
 .calendar-navigation button:hover {
-    background-color: #0056b3;
+    background-color: #aa7a669f;
 }
 
 #currentMonth {
@@ -82,7 +90,13 @@ body {
 
 
 .calendar .today {
-    background-color: #007bff;
+    background-color: #aa7a669f;
     color: #fff;
 }
 
+.calendar-day.selected {
+    /* Styles for the selected date (other than today) */
+    background-color: #aa7a669f; /* Example: Light gray background */
+    font-weight: bold; /* Example: Bold font */
+    border-color: coral;
+}
